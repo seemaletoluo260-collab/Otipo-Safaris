@@ -1,7 +1,7 @@
 # Otipo Safaris
 
 Website for Otipo Safaris, Premium Kenya Safari Tours & Wildlife Adventures.
-Migrated from https://otiposafaris.lovable.app
+Live site: https://seemaletoluo260-collab.github.io/Otipo-Safaris/
 
 This repo holds the production build of the site (static HTML/CSS/JS plus media),
 so any static host can serve it as-is.
@@ -23,10 +23,9 @@ Then open http://localhost:8080
 
 ## Deploy
 
-The site uses absolute paths (`/assets/...`, `/gallery/...`), so it must be served
-from the domain root, for example:
+The site is published with **GitHub Pages** from the `main` branch (root folder).
+Every push to `main` updates https://seemaletoluo260-collab.github.io/Otipo-Safaris/
+within a minute or two.
 
-- **Vercel / Netlify / Cloudflare Pages**: import this repo, no build command, output directory `.`
-- **GitHub Pages**: works only with a custom domain (e.g. otiposafaris.com), not at `/Otipo-Safaris/`
-
-`vercel.json` and `_redirects` send unknown routes to `index.html` (SPA fallback).
+Paths are relative, so the same files also work on a custom domain
+(e.g. otiposafaris.com) or on Vercel / Netlify with no build step.
